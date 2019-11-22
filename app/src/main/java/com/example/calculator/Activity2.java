@@ -32,7 +32,7 @@ public class Activity2 extends AppCompatActivity {
             public void onClick(View v) {
                 double number = Double.parseDouble(inputNum1.getText().toString());
                 double squareRoot = Math.sqrt(number);
-                answer.setText("Answer is "+squareRoot);
+                answer.setText("Answer is =  "+squareRoot);
                 Intent intent = new Intent(getApplicationContext(),AnswerActivity.class);
                 intent.putExtra("ANSWER",Double.toString(squareRoot));
                 startActivity(intent);
